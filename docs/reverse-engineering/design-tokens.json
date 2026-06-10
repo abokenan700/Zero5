@@ -1,0 +1,95 @@
+{
+  "source": {
+    "artifact": "Blinkit_v17.99.1(280170991).apks",
+    "packageName": "com.grofers.customerapp",
+    "appName": "Blinkit",
+    "versionName": "17.99.1",
+    "versionCode": 280170991,
+    "minSdk": 24,
+    "targetSdk": 36,
+    "densityProfile": "xxhdpi split extracted; measurements below are density-independent pixels unless stated"
+  },
+  "colors": {
+    "brandYellow": "#F8CB46",
+    "brandGreen": "#0C831F",
+    "brandGreenDark": "#0B6E1B",
+    "inkPrimary": "#1F1F1F",
+    "inkSecondary": "#666666",
+    "inkMuted": "#9A9A9A",
+    "surface": "#FFFFFF",
+    "surfaceAlt": "#F7F7F7",
+    "surfaceWarm": "#FFF8D8",
+    "strokeSubtle": "#EEEEEE",
+    "danger": "#E23744",
+    "success": "#24963F"
+  },
+  "typography": {
+    "family": "System Android sans-serif / app bundled font fallback",
+    "display": { "size": 28, "lineHeight": 32, "weight": 800 },
+    "title": { "size": 20, "lineHeight": 24, "weight": 800 },
+    "subtitle": { "size": 16, "lineHeight": 21, "weight": 700 },
+    "body": { "size": 14, "lineHeight": 19, "weight": 500 },
+    "caption": { "size": 12, "lineHeight": 16, "weight": 500 },
+    "micro": { "size": 10, "lineHeight": 13, "weight": 700 }
+  },
+  "spacing": {
+    "screenPadding": 16,
+    "gutter": 12,
+    "sectionGap": 18,
+    "cardGap": 10,
+    "bottomNavHeight": 64,
+    "statusHeaderHeight": 142,
+    "searchHeight": 48,
+    "productCardWidth": 124,
+    "categoryTileWidth": 72
+  },
+  "radii": {
+    "search": 12,
+    "card": 12,
+    "pill": 999,
+    "productImage": 12,
+    "sheet": 24
+  },
+  "elevation": {
+    "headerSearch": "0 2px 8px rgba(0,0,0,.08)",
+    "card": "0 1px 3px rgba(0,0,0,.08)",
+    "bottomNav": "0 -2px 14px rgba(0,0,0,.10)"
+  },
+  "components": {
+    "header": {
+      "background": "brandYellow",
+      "deliveryTimeText": { "size": 28, "weight": 800, "color": "inkPrimary" },
+      "addressText": { "size": 13, "weight": 600, "color": "inkPrimary" },
+      "profileButton": { "diameter": 36, "background": "#000000", "iconColor": "#FFFFFF" }
+    },
+    "searchBar": {
+      "height": 48,
+      "radius": 12,
+      "background": "surface",
+      "stroke": "strokeSubtle",
+      "iconSize": 20,
+      "placeholder": "Search \"milk\"",
+      "placeholderColor": "inkMuted"
+    },
+    "productCard": {
+      "width": 124,
+      "imageSize": 108,
+      "radius": 12,
+      "timerChipHeight": 18,
+      "addButton": { "width": 56, "height": 32, "radius": 8, "textColor": "brandGreen", "background": "#F4FFF6", "stroke": "brandGreen" }
+    },
+    "categoryTile": {
+      "width": 72,
+      "imageSize": 64,
+      "labelLines": 2,
+      "labelSize": 11
+    },
+    "bottomNavigation": {
+      "height": 64,
+      "iconSize": 22,
+      "activeColor": "brandGreen",
+      "inactiveColor": "inkMuted",
+      "labels": ["Home", "Categories", "Print", "Cart"]
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "bundle": {
+    "file": "Blinkit_v17.99.1(280170991).apks",
+    "committed": false,
+    "policy": "Source APKS is binary and must be provided locally; see docs/reverse-engineering/source-artifact.md.",
+    "createdBy": "Apktool M",
+    "entries": [
+      { "name": "base.apk", "bytes": 84942119 },
+      { "name": "split_config.arm64_v8a.apk", "bytes": 1295184 },
+      { "name": "split_config.xxhdpi.apk", "bytes": 289915 },
+      { "name": "icon.png", "bytes": 3700 },
+      { "name": "manifest.json", "bytes": 207 }
+    ]
+  },
+  "application": {
+    "name": "Blinkit",
+    "packageName": "com.grofers.customerapp",
+    "versionName": "17.99.1",
+    "versionCode": 280170991,
+    "minSdk": 24,
+    "targetSdk": 36
+  },
+  "baseApk": {
+    "resourceFileCount": 3094,
+    "assetHighlights": [
+      "assets/home_loader.json",
+      "assets/home_loader.lottie",
+      "assets/login/background_lottie.json",
+      "assets/login/background_lottie_dark.json",
+      "assets/location/default_template.json",
+      "assets/profile/logged_in_page.json",
+      "assets/profile/logged_out_page.json",
+      "assets/cart/preview_template.json",
+      "assets/customisation/product_customisation.json",
+      "assets/dark_mode/dark_to_light_switch.lottie",
+      "assets/dark_mode/light_to_dark_switch.lottie"
+    ],
+    "drawableHighlights": [
+      "res/drawable/app_logo.webp",
+      "res/drawable/app_logo_splash.xml",
+      "res/drawable/crystal_home.webp",
+      "res/drawable/location_icon.webp",
+      "res/drawable/ic_search_black_24.xml",
+      "res/drawable/empty_cart_vector.xml",
+      "res/drawable/qd_ic_qd_search.xml",
+      "res/drawable/qd_blinkit_horizontal_green_rounded_progress.xml",
+      "res/drawable/sushi_bottom_nav_text_color_selector.xml"
+    ]
+  },
+  "xxhdpiSplit": {
+    "purpose": "density-specific raster assets used for pixel measurements on xxhdpi Android devices",
+    "drawableHighlights": [
+      "res/drawable-xxhdpi-v4/empty_not_found.webp",
+      "res/drawable-xxhdpi-v4/no_address_to_import.webp",
+      "res/drawable-xxhdpi-v4/no_balance.webp",
+      "res/drawable-xxhdpi-v4/no_internet.webp",
+      "res/drawable-xxhdpi-v4/no_location.webp",
+      "res/drawable-xxhdpi-v4/no_location_found.webp",
+      "res/drawable-xxhdpi-v4/server_error.webp"
+    ]
+  },
+  "binaryPolicy": {
+    "committedExtractedRasterAssets": false,
+    "reason": "The code review environment marks binary diffs as unsupported, so extracted .png/.webp files are listed in docs/reverse-engineering/asset-manifest.md instead of being committed.",
+    "textOnlyReplacement": "apps/blinkit-react rebuilds the reviewed home shell using CSS, text, emoji placeholders, and tokenized measurements."
+  },
+  "reverseEngineeringLimits": [
+    "The APK contains compiled binary Android XML and obfuscated bytecode; this extraction focuses on resources, assets, UI tokens, and reconstructable product surfaces.",
+    "Live remote catalog images, prices, offers, and A/B layout payloads are API-driven and are not embedded in the APK, so mock content is labeled as replaceable data."
+  ]
+}

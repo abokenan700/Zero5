@@ -1,0 +1,11 @@
+{
+  "name": "blinkit-pixel-perfect-react",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "React implementation of the reverse-engineered Blinkit v17.99.1 pixel-perfect home shell.",
+  "scripts": {
+    "start": "python3 -m http.server 4173 --directory .",
+    "check": "node --check src/App.js && node --check src/catalog.js && node --check src/tokens.js"
+  }
+}
