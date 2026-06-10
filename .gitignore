@@ -1,0 +1,10 @@
+# Reverse-engineering scratch output and generated binaries
+reverse_engineered/
+*.apk
+*.apks
+*.png
+*.webp
+*.jpg
+*.jpeg
+*.gif
+*.lottie

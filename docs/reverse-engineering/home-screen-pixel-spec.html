@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blinkit v17.99.1 Pixel Spec</title>
+<style>
+:root{
+  --brand-yellow:#F8CB46;
+  --brand-green:#0C831F;
+  --ink:#1F1F1F;
+  --muted:#666;
+  --soft:#9A9A9A;
+  --bg:#F7F7F7;
+  --surface:#FFF;
+  --stroke:#EEE;
+  --danger:#E23744;
+  --warm:#FFF8D8;
+  --pad:16px;
+  --radius:12px; font-family:Inter,Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#ddd;display:grid;place-items:start center;min-height:100vh;color:var(--ink)}
+.phone{width:390px;height:844px;background:var(--bg);overflow:hidden;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.25)}
+.header{height:142px;background:var(--brand-yellow);padding:14px var(--pad) 0;position:relative;z-index:2}
+.status{height:18px;display:flex;align-items:center;justify-content:space-between;font-size:12px;font-weight:700;letter-spacing:.2px}.signal{display:flex;gap:4px}.dot{width:4px;height:4px;border-radius:50%;background:#111}.delivery{margin-top:10px;display:flex;justify-content:space-between;align-items:flex-start}.delivery h1{font-size:28px;line-height:32px;margin:0;font-weight:900;letter-spacing:-.6px}.address{font-size:13px;font-weight:700;line-height:18px;margin-top:1px;max-width:285px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.avatar{width:36px;height:36px;border-radius:50%;background:#111;color:#fff;display:grid;place-items:center;font-weight:900;font-size:17px}.search{position:absolute;left:16px;right:16px;bottom:8px;height:48px;background:#fff;border:1px solid var(--stroke);border-radius:12px;display:flex;align-items:center;gap:10px;padding:0 14px;box-shadow:0 2px 8px rgba(0,0,0,.08);font-size:14px;color:var(--soft);font-weight:600}.search svg{width:20px;height:20px;stroke:#111}.content{height:638px;overflow:hidden;padding:14px 0 76px}.hero{margin:0 16px 14px;border-radius:16px;background:linear-gradient(135deg,#fff6c6,#fff);padding:14px 14px 16px;display:flex;align-items:center;gap:12px;border:1px solid #f1e5a0}.brand-mark{width:52px;height:52px;display:grid;place-items:center;border-radius:14px;background:#fff;color:var(--brand-green);font-size:13px;font-weight:900;letter-spacing:-.7px;box-shadow:inset 0 0 0 2px rgba(12,131,31,.12)}.brand-mark strong{color:#f2b900}.hero b{font-size:17px;line-height:22px}.hero p{margin:2px 0 0;color:var(--muted);font-size:12px;line-height:16px;font-weight:600}.section{background:#fff;margin:0 0 12px;padding:16px 0;border-top:1px solid #f1f1f1;border-bottom:1px solid #f1f1f1}.section-head{display:flex;justify-content:space-between;align-items:center;padding:0 16px 12px}.section h2{font-size:20px;line-height:24px;margin:0;font-weight:900;letter-spacing:-.2px}.see{font-size:13px;color:var(--brand-green);font-weight:800}.categories{display:grid;grid-template-columns:repeat(5,72px);gap:12px 3px;padding:0 16px}.cat{width:72px;text-align:center;font-size:11px;line-height:14px;font-weight:800}.cat-art{width:64px;height:64px;margin:0 auto 6px;border-radius:14px;background:var(--warm);display:grid;place-items:center;font-size:30px}.rail{display:flex;gap:10px;overflow:hidden;padding:0 16px}.product{width:124px;min-width:124px;background:#fff;border:1px solid var(--stroke);border-radius:12px;padding:8px;box-shadow:0 1px 3px rgba(0,0,0,.06)}.photo{height:108px;border-radius:12px;background:linear-gradient(180deg,#fafafa,#f1f1f1);display:grid;place-items:center;font-size:42px;position:relative}.timer{position:absolute;left:6px;bottom:6px;height:18px;border-radius:5px;background:#fff;padding:2px 5px;font-size:9px;font-weight:900;box-shadow:0 1px 4px rgba(0,0,0,.14)}.name{height:34px;margin:8px 0 3px;font-size:13px;line-height:17px;font-weight:800;overflow:hidden}.unit{font-size:12px;color:var(--muted);font-weight:600;margin-bottom:8px}.buy{display:flex;align-items:center;justify-content:space-between}.price{font-size:13px;font-weight:900}.add{width:56px;height:32px;border-radius:8px;border:1px solid var(--brand-green);background:#f4fff6;color:var(--brand-green);display:grid;place-items:center;font-size:12px;font-weight:900}.bottom{position:absolute;left:0;right:0;bottom:0;height:64px;background:#fff;box-shadow:0 -2px 14px rgba(0,0,0,.10);display:grid;grid-template-columns:repeat(4,1fr);padding-top:7px}.nav{text-align:center;color:var(--soft);font-size:11px;font-weight:800}.nav .ico{font-size:22px;line-height:25px}.nav.active{color:var(--brand-green)}
+</style>
+</head>
+<body>
+<main class="phone" aria-label="Blinkit home screen pixel reconstruction">
+  <header class="header">
+    <div class="status"><span>9:41</span><span class="signal"><span class="dot"></span><span class="dot"></span><span class="dot"></span></span></div>
+    <div class="delivery"><div><h1>Delivery in 8 minutes</h1><div class="address">Home - 221B Baker Street, Indiranagar</div></div><div class="avatar">B</div></div>
+    <div class="search"><svg fill="none" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke-width="2" stroke-linecap="round"/></svg><span>Search "milk"</span></div>
+  </header>
+  <section class="content">
+    <div class="hero"><div class="brand-mark" aria-label="Blinkit wordmark"><span>blink<strong>it</strong></span></div><div><b>Fresh groceries at your doorstep</b><p>Reverse-engineered shell; catalog content is remote data.</p></div></div>
+    <section class="section"><div class="section-head"><h2>Shop by category</h2><span class="see">see all</span></div><div class="categories"><div class="cat"><div class="cat-art">🥛</div>Dairy & Bread</div><div class="cat"><div class="cat-art">🍎</div>Fruits & Veg</div><div class="cat"><div class="cat-art">🍫</div>Snacks</div><div class="cat"><div class="cat-art">🥤</div>Cold Drinks</div><div class="cat"><div class="cat-art">🧴</div>Personal Care</div><div class="cat"><div class="cat-art">🧹</div>Cleaning</div><div class="cat"><div class="cat-art">🐾</div>Pet Care</div><div class="cat"><div class="cat-art">💄</div>Beauty</div><div class="cat"><div class="cat-art">🍼</div>Baby Care</div><div class="cat"><div class="cat-art">🏠</div>Home</div></div></section>
+    <section class="section"><div class="section-head"><h2>Popular near you</h2><span class="see">see all</span></div><div class="rail"><article class="product"><div class="photo">🥛<span class="timer">8 MINS</span></div><div class="name">Amul Taaza Toned Milk</div><div class="unit">500 ml</div><div class="buy"><span class="price">₹28</span><span class="add">ADD</span></div></article><article class="product"><div class="photo">🍞<span class="timer">8 MINS</span></div><div class="name">Harvest Gold Bread</div><div class="unit">350 g</div><div class="buy"><span class="price">₹45</span><span class="add">ADD</span></div></article><article class="product"><div class="photo">🍌<span class="timer">8 MINS</span></div><div class="name">Fresh Banana Robusta</div><div class="unit">4 pcs</div><div class="buy"><span class="price">₹49</span><span class="add">ADD</span></div></article></div></section>
+  </section>
+  <nav class="bottom"><div class="nav active"><div class="ico">⌂</div>Home</div><div class="nav"><div class="ico">▦</div>Categories</div><div class="nav"><div class="ico">▣</div>Print</div><div class="nav"><div class="ico">🛒</div>Cart</div></nav>
+</main>
+</body>
+</html>
